@@ -19,7 +19,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Check that the tag matches the plugin version
         run: |
@@ -46,11 +46,18 @@ jobs:
       - name: Build update.json and release notes
         run: python3 .github/scripts/release-files.py "$VERSION" "$GITHUB_REPOSITORY" build
 
+      # A tag that is moved and pushed again updates the existing release
+      # instead of failing.
       - name: Publish the release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" build/minimalio-seo.zip build/update.json \
-            --title "Minimalio SEO $VERSION" \
-            --notes-file build/notes.md \
-            --latest
+          if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" build/minimalio-seo.zip build/update.json --clobber
+            gh release edit "$GITHUB_REF_NAME" --title "Minimalio SEO $VERSION" --notes-file build/notes.md
+          else
+            gh release create "$GITHUB_REF_NAME" build/minimalio-seo.zip build/update.json \
+              --title "Minimalio SEO $VERSION" \
+              --notes-file build/notes.md \
+              --latest
+          fi
