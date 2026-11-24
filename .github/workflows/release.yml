@@ -1,0 +1,56 @@
+# Builds a release when a version tag is pushed (e.g. v1.1.0):
+# - minimalio-seo.zip  the installable plugin (top folder "minimalio-seo"),
+# - update.json        read by installed copies to offer the update.
+#
+# Release steps: bump the version in minimalio-seo.php (header + constant)
+# and readme.txt (Stable tag + changelog), commit, then:
+#   git tag v1.1.0 && git push origin main v1.1.0
+
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check that the tag matches the plugin version
+        run: |
+          TAG="${GITHUB_REF_NAME#v}"
+          HEADER=$(grep -m1 -E '^ \* Version:' minimalio-seo.php | awk '{print $NF}')
+          CONSTANT=$(grep -m1 -oE "MINIMALIO_SEO_VERSION', '[^']+'" minimalio-seo.php | sed -E "s/.*, '([^']+)'/\1/")
+          STABLE=$(grep -m1 '^Stable tag:' readme.txt | awk '{print $NF}')
+          echo "tag=$TAG header=$HEADER constant=$CONSTANT readme=$STABLE"
+          for v in "$HEADER" "$CONSTANT" "$STABLE"; do
+            if [ "$v" != "$TAG" ]; then
+              echo "::error::Version mismatch. Tag $TAG, plugin header $HEADER, MINIMALIO_SEO_VERSION $CONSTANT, readme Stable tag $STABLE."
+              exit 1
+            fi
+          done
+          echo "VERSION=$TAG" >> "$GITHUB_ENV"
+
+      - name: Build minimalio-seo.zip
+        run: |
+          mkdir -p build/minimalio-seo
+          rsync -a --exclude-from=.distignore ./ build/minimalio-seo/
+          (cd build && zip -rqX minimalio-seo.zip minimalio-seo)
+          unzip -l build/minimalio-seo.zip
+
+      - name: Build update.json and release notes
+        run: python3 .github/scripts/release-files.py "$VERSION" "$GITHUB_REPOSITORY" build
+
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" build/minimalio-seo.zip build/update.json \
+            --title "Minimalio SEO $VERSION" \
+            --notes-file build/notes.md \
+            --latest

@@ -1,0 +1,8 @@
+# Files left out of minimalio-seo.zip (used by .github/workflows/release.yml).
+/.git
+/.github
+/build
+.gitignore
+.distignore
+README.md
+.DS_Store

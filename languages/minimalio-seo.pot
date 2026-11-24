@@ -1,0 +1,603 @@
+# Minimalio SEO translation template.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Minimalio SEO 1.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/minimalio-theme/minimalio-seo/"
+"issues\n"
+"POT-Creation-Date: 2026-11-24 13:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: minimalio-seo\n"
+
+#. translators: 1: characters used, 2: recommended maximum
+#: assets/editor.js:73
+#, javascript-format
+msgid "%1$d / %2$d characters"
+msgstr ""
+
+#: assets/editor.js:168
+msgid "Replace image"
+msgstr ""
+
+#: assets/editor.js:168 includes/admin/class-settings-page.php:640
+msgid "Select image"
+msgstr ""
+
+#: assets/editor.js:174 includes/admin/class-settings-page.php:641
+msgid "Remove"
+msgstr ""
+
+#: assets/editor.js:186 includes/admin/class-post-meta.php:31
+#: includes/admin/class-term-meta.php:46
+msgid "SEO"
+msgstr ""
+
+#: assets/editor.js:192 includes/admin/class-post-meta.php:126
+msgid "This is your homepage."
+msgstr ""
+
+#: assets/editor.js:194 includes/admin/class-post-meta.php:127
+msgid ""
+"The SEO title, description and share image set here are what Google and "
+"social networks show for your site."
+msgstr ""
+
+#: assets/editor.js:202 includes/admin/class-post-meta.php:132
+msgid "Google preview"
+msgstr ""
+
+#: assets/editor.js:208 includes/admin/class-post-meta.php:73
+msgid "No meta description. Google will pick text from the page."
+msgstr ""
+
+#: assets/editor.js:214 includes/admin/class-post-meta.php:139
+#: includes/admin/class-term-meta.php:49
+msgid "SEO title"
+msgstr ""
+
+#: assets/editor.js:224
+msgid "Leave empty to keep the title from Jetpack SEO."
+msgstr ""
+
+#: assets/editor.js:225
+msgid "Leave empty for the default."
+msgstr ""
+
+#: assets/editor.js:231 includes/admin/class-post-meta.php:145
+#: includes/admin/class-term-meta.php:56
+msgid "Meta description"
+msgstr ""
+
+#: assets/editor.js:242
+msgid "Leave empty to keep the description from Jetpack SEO."
+msgstr ""
+
+#: assets/editor.js:243
+msgid "Leave empty to use the excerpt."
+msgstr ""
+
+#: assets/editor.js:253
+msgid "Hide from search engines (noindex)"
+msgstr ""
+
+#: assets/editor.js:256
+msgid "This page will not appear in Google and is left out of the sitemap."
+msgstr ""
+
+#: assets/editor.js:257
+msgid "This page can appear in search results."
+msgstr ""
+
+#: assets/editor.js:265 includes/admin/class-post-meta.php:151
+msgid "Social sharing"
+msgstr ""
+
+#: assets/editor.js:266
+msgid ""
+"Image shown when this page is shared on Facebook, LinkedIn, X, Pinterest, "
+"WhatsApp… Defaults to the featured image. Recommended: 1200 × 630 px."
+msgstr ""
+
+#: assets/editor.js:270 includes/admin/class-post-meta.php:153
+msgid "Social title"
+msgstr ""
+
+#: assets/editor.js:278 includes/admin/class-post-meta.php:157
+msgid "Social description"
+msgstr ""
+
+#: assets/editor.js:287 includes/admin/class-post-meta.php:168
+msgid "Advanced"
+msgstr ""
+
+#: assets/editor.js:289
+msgid "Nofollow links on this page"
+msgstr ""
+
+#: assets/editor.js:296 includes/admin/class-post-meta.php:186
+#: includes/admin/class-term-meta.php:73
+msgid "Canonical URL"
+msgstr ""
+
+#: assets/editor.js:300
+msgid "Only needed when this content duplicates another URL."
+msgstr ""
+
+#: includes/admin/class-post-meta.php:118 includes/admin/class-term-meta.php:43
+msgid "Default (index)"
+msgstr ""
+
+#: includes/admin/class-post-meta.php:118 includes/admin/class-term-meta.php:43
+msgid "Default (noindex)"
+msgstr ""
+
+#: includes/admin/class-post-meta.php:141
+msgid ""
+"Leave empty to use the default. Variables: %title%, %sitename%, %tagline%, "
+"%sep%"
+msgstr ""
+
+#: includes/admin/class-post-meta.php:147
+msgid ""
+"A short, compelling summary of this page. Leave empty to use the excerpt."
+msgstr ""
+
+#: includes/admin/class-post-meta.php:154
+msgid "Same as the page title"
+msgstr ""
+
+#: includes/admin/class-post-meta.php:158
+msgid "Same as the meta description"
+msgstr ""
+
+#: includes/admin/class-post-meta.php:161
+msgid "Social image"
+msgstr ""
+
+#: includes/admin/class-post-meta.php:163
+msgid ""
+"Shown when this page is shared on Facebook, LinkedIn, X, Pinterest, "
+"WhatsApp… Defaults to the featured image. Recommended: 1200 × 630 px."
+msgstr ""
+
+#: includes/admin/class-post-meta.php:171 includes/admin/class-term-meta.php:63
+msgid "Search engine indexing"
+msgstr ""
+
+#: includes/admin/class-post-meta.php:174 includes/admin/class-term-meta.php:67
+msgid "Index: show in search results"
+msgstr ""
+
+#: includes/admin/class-post-meta.php:175 includes/admin/class-term-meta.php:68
+msgid "Noindex: hide from search results"
+msgstr ""
+
+#: includes/admin/class-post-meta.php:182
+msgid "Nofollow: ask search engines not to follow links on this page"
+msgstr ""
+
+#: includes/admin/class-post-meta.php:188
+msgid "Only needed when this content is a duplicate of another URL."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:35
+#: includes/admin/class-settings-page.php:493
+msgid "SEO - Minimalio"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:77
+msgid "Choose image"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:78
+msgid "Use this image"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:92
+msgid "Variables: %title%, %sitename%, %tagline%, %sep%, %page%"
+msgstr ""
+
+#. translators: %s: post type name
+#. translators: %s: taxonomy name
+#: includes/admin/class-settings-page.php:105
+#: includes/admin/class-settings-page.php:129
+#, php-format
+msgid "%s title"
+msgstr ""
+
+#. translators: %s: post type name (plural)
+#: includes/admin/class-settings-page.php:112
+#, php-format
+msgid "Hide all %s from search engines (noindex)"
+msgstr ""
+
+#. translators: %s: post type name (plural)
+#: includes/admin/class-settings-page.php:118
+#, php-format
+msgid "%s archive title"
+msgstr ""
+
+#. translators: %s: taxonomy name (plural)
+#: includes/admin/class-settings-page.php:136
+#, php-format
+msgid "Hide all %s archives from search engines (noindex)"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:145
+msgid "This website represents"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:147
+msgid "An organization or studio"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:148
+msgid "A person"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:153
+msgid "Name"
+msgstr ""
+
+#. translators: %s: site title
+#: includes/admin/class-settings-page.php:157
+#, php-format
+msgid "If empty, the site title is used: <strong>%s</strong>"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:163
+msgid "Logo / photo"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:164
+msgid "Square image, at least 112 × 112 px. If empty, the site logo is used."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:173
+msgid "Homepage"
+msgstr ""
+
+#. translators: 1: page title, 2: opening link tag, 3: closing link tag
+#: includes/admin/class-settings-page.php:176
+#, php-format
+msgid ""
+"Your homepage is the page <strong>%1$s</strong>. Set its SEO title, "
+"description and share image in the SEO panel of that page. %2$sEdit homepage "
+"SEO →%3$s"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:186
+msgid "Homepage title"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:192
+msgid "Homepage meta description"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:193
+msgid ""
+"Shown under your site name in Google. About 120–160 characters. If empty, "
+"the site tagline is used."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:201
+msgid "Title separator"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:207
+#: includes/admin/class-settings-page.php:209
+msgid "General"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:210
+msgid "Contact & location"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:213
+msgid "Phone"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:215
+msgid ""
+"Optional. Fill in if clients contact or visit you, for example a photography "
+"or design studio. With a street address and city, Google sees your business "
+"as a local business, which can help in local and Maps searches. Everything "
+"here is public in the page code, so leave the address empty if you work from "
+"home."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:219
+msgid "Street address"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:223
+msgid "City"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:227
+msgid "Postal code"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:231
+msgid "State / region"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:235
+msgid "Country"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:236
+msgid "e.g. CZ or Czech Republic"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:239
+msgid "Social"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:242
+msgid "Default share image"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:243
+msgid "Used when a page has no featured image. Recommended: 1200 × 630 px."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:247
+msgid "X (Twitter) username"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:252
+msgid "Social profiles"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:254
+msgid "One URL per line. Helps Google connect your profiles to your site."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:260
+msgid "Content Types"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:262
+msgid "Content types"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:263
+msgid "Taxonomies"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:264
+msgid "Other archives"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:267
+msgid "Author archive title"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:273
+msgid "Hide author archives from search engines (noindex)"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:277
+msgid "Date archive title"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:283
+msgid "Hide date archives from search engines (noindex)"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:287
+msgid "Search results title"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:292
+msgid "404 page title"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:294
+msgid "Search results and 404 pages are always hidden from search engines."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:297
+msgid "Media"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:300
+msgid "Attachment pages"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:301
+msgid "Redirect media attachment pages to their parent post (or to the file)"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:302
+msgid ""
+"WordPress creates a separate page for every uploaded image. These pages have "
+"no real content, so they are redirected instead of indexed."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:308
+#: includes/admin/class-settings-page.php:313
+msgid "Sitemap"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:310
+msgid "XML Sitemap"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:314
+msgid "Enable the XML sitemap"
+msgstr ""
+
+#. translators: %s: sitemap URL
+#: includes/admin/class-settings-page.php:318
+#, php-format
+msgid ""
+"Your sitemap: %s — submit it in Google Search Console and Bing Webmaster "
+"Tools. Noindexed content is left out automatically."
+msgstr ""
+
+#. translators: %s: link to Settings > Reading
+#: includes/admin/class-settings-page.php:323
+#, php-format
+msgid ""
+"<strong>The sitemap is currently off</strong> because search engines are "
+"discouraged from indexing this site (%s). WordPress disables the sitemap in "
+"that case; it will appear at /wp-sitemap.xml as soon as the site is public."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:324
+#: includes/admin/class-settings-page.php:501
+msgid "Settings → Reading"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:331
+msgid "Structured Data"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:333
+msgid "Knowledge Graph"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:336
+msgid "Structured data"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:337
+msgid ""
+"Output JSON-LD structured data (website, organization/person, articles, "
+"breadcrumbs)"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:343
+msgid "Verification"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:345
+msgid "Webmaster tools"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:348
+msgid "Google Search Console"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:349
+msgid "Paste the content value or the whole meta tag."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:353
+msgid "Bing Webmaster Tools"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:357
+msgid "Pinterest"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:361
+msgid "Facebook (Meta)"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:362
+msgid ""
+"Domain verification for Meta Business Suite. Only needed for Facebook and "
+"Instagram ads or link ownership."
+msgstr ""
+
+#. translators: %s: link to Reading settings
+#: includes/admin/class-settings-page.php:500
+#, php-format
+msgid ""
+"Search engines are currently discouraged from indexing this site. Change "
+"this in %s."
+msgstr ""
+
+#: includes/admin/class-term-meta.php:52
+msgid ""
+"Leave empty to use the default. Variables: %title%, %sitename%, %sep%, %page%"
+msgstr ""
+
+#: includes/admin/class-term-meta.php:59
+msgid "Leave empty to use the term description."
+msgstr ""
+
+#: includes/admin/class-term-meta.php:76
+msgid "Only needed when this archive duplicates another URL."
+msgstr ""
+
+#: includes/class-context.php:167
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: includes/class-context.php:169
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#. translators: %s: search query
+#: includes/class-context.php:172
+#, php-format
+msgid "Search results for “%s”"
+msgstr ""
+
+#: includes/class-context.php:174
+msgid "Page not found"
+msgstr ""
+
+#. translators: %d: page number
+#: includes/class-context.php:197
+#, php-format
+msgid "Page %d"
+msgstr ""
+
+#: includes/class-schema.php:267
+msgid "Home"
+msgstr ""
+
+#: includes/class-updater.php:101
+msgid ""
+"Lightweight SEO for Minimalio Premium: titles, meta descriptions, robots, "
+"canonical URLs, Open Graph, structured data and XML sitemaps."
+msgstr ""
+
+#. translators: %s: name of the other SEO plugin
+#: minimalio-seo.php:122
+#, php-format
+msgid ""
+"Minimalio SEO: %s is also active. To avoid duplicate meta tags, Minimalio "
+"SEO does not output anything on the front end until the other SEO plugin is "
+"deactivated."
+msgstr ""
+
+#: minimalio-seo.php:161
+msgid ""
+"Minimalio SEO requires the Minimalio Premium plugin (minimalio-portfolio) to "
+"be installed and active."
+msgstr ""
+
+#: minimalio-seo.php:162
+msgid "Get Minimalio Premium"
+msgstr ""
+
+#: minimalio-seo.php:177
+msgid "Settings"
+msgstr ""
+
+#. Plugin Name of the plugin
+#: minimalio-seo.php
+msgid "Minimalio SEO"
+msgstr ""
+
+#. Description of the plugin
+#: minimalio-seo.php
+msgid ""
+"Lightweight SEO for Minimalio Premium: titles, meta descriptions, robots, "
+"canonical URLs, Open Graph, structured data and XML sitemaps. Only what "
+"search engines and social networks actually use."
+msgstr ""

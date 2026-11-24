@@ -1,0 +1,229 @@
+/* Minimalio SEO admin */
+
+/* Settings */
+.minimalio-seo-settings .minimalio-seo-tabs {
+	margin-bottom: 0;
+}
+
+.minimalio-seo-settings .minimalio-seo-panel h2 {
+	margin-top: 2em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.form-table td fieldset.minimalio-seo-radios label {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	/* !important: WP core sets .form-table td fieldset label { margin: … !important }. */
+	margin: 0.35em 24px 0.5em 0 !important;
+}
+
+.minimalio-seo-radios input[type="radio"] {
+	margin: 0 6px 0 0;
+}
+
+/* Image picker */
+.minimalio-seo-image__preview img {
+	display: block;
+	max-width: 240px;
+	max-height: 160px;
+	margin-bottom: 8px;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+}
+
+.minimalio-seo-image .button-link {
+	margin-left: 8px;
+	color: #b32d2e;
+}
+
+/* Counters */
+.minimalio-seo-counter {
+	display: inline-block;
+	margin: 4px 0;
+	font-size: 12px;
+	color: #646970;
+}
+
+.minimalio-seo-counter[data-state="ok"] {
+	color: #00a32a;
+}
+
+.minimalio-seo-counter[data-state="short"] {
+	color: #996800;
+}
+
+.minimalio-seo-counter[data-state="long"] {
+	color: #d63638;
+}
+
+/* Meta box */
+.minimalio-seo-box .minimalio-seo-field {
+	margin: 0 0 16px;
+}
+
+.minimalio-seo-box .minimalio-seo-field > label {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.minimalio-seo-box .minimalio-seo-field .description {
+	display: block;
+	margin-top: 2px;
+}
+
+.minimalio-seo-box .minimalio-seo-counter {
+	display: block;
+	text-align: right;
+}
+
+.minimalio-seo-details {
+	margin: 0 0 12px;
+	padding: 0 12px;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+}
+
+.minimalio-seo-details > summary {
+	padding: 10px 0;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.minimalio-seo-details[open] > summary {
+	margin-bottom: 8px;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+/* Google snippet preview */
+.minimalio-seo-snippet {
+	max-width: 600px;
+	margin: 4px 0 20px;
+	padding: 14px 16px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	font-family: Arial, sans-serif;
+}
+
+.minimalio-seo-snippet__label {
+	margin-bottom: 8px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #646970;
+}
+
+.minimalio-seo-snippet__url {
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #202124;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.minimalio-seo-snippet__title {
+	margin: 2px 0 3px;
+	font-size: 20px;
+	line-height: 1.3;
+	color: #1a0dab;
+}
+
+.minimalio-seo-snippet__desc {
+	font-size: 14px;
+	line-height: 1.58;
+	color: #4d5156;
+}
+
+.minimalio-seo-snippet__desc.is-empty {
+	font-style: italic;
+	color: #8c8f94;
+}
+
+/* Block editor sidebar panel */
+.minimalio-seo-snippet--compact {
+	margin: 0 0 16px;
+	padding: 10px 12px;
+}
+
+.minimalio-seo-snippet--compact .minimalio-seo-snippet__title {
+	font-size: 16px;
+}
+
+.minimalio-seo-snippet--compact .minimalio-seo-snippet__desc {
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.minimalio-seo-panel .minimalio-seo-counter {
+	display: inline;
+	margin: 0;
+}
+
+.minimalio-seo-panel-gap {
+	height: 16px;
+}
+
+.minimalio-seo-panel-heading {
+	margin: 24px 0 8px;
+	padding-top: 16px;
+	border-top: 1px solid #e0e0e0;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.minimalio-seo-panel-help {
+	margin: 0 0 12px;
+	font-size: 12px;
+	color: #757575;
+}
+
+.minimalio-seo-panel-image__preview {
+	display: block;
+	width: 100%;
+	margin: 0 0 8px;
+	padding: 0;
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+
+.minimalio-seo-panel-image__preview img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 2px;
+}
+
+.minimalio-seo-panel-image__actions {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+/* Static homepage notes */
+.minimalio-seo-front-badge {
+	margin: 0 0 16px;
+	padding: 8px 12px;
+	background: #f0f6fc;
+	border-left: 4px solid #2271b1;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.minimalio-seo-front-notice {
+	max-width: 600px;
+	margin: 0;
+	line-height: 1.8;
+}
+
+.minimalio-seo-front-notice .button {
+	margin-left: 4px;
+	vertical-align: baseline;
+}
