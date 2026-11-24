@@ -7,9 +7,9 @@
  * Requires at least: 5.8
  * Requires PHP:      7.4
  * Author:            mikulas-k
- * Author URI:        https://mikulaskarpeta.net/en
- * License:           GPL-3.0-or-later
- * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
+ * Author URI:        https://minimalio.org
+ * License:           GPL-2.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       minimalio-seo
  * Domain Path:       /languages
  * Update URI:        https://github.com/minimalio-theme/minimalio-seo

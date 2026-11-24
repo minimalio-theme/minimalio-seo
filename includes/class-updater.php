@@ -90,7 +90,7 @@ class Minimalio_SEO_Updater {
 			'name'          => 'Minimalio SEO',
 			'slug'          => self::SLUG,
 			'version'       => $release['version'],
-			'author'        => '<a href="https://mikulaskarpeta.net/en">mikulas-k</a>',
+			'author'        => '<a href="https://minimalio.org">mikulas-k</a>',
 			'homepage'      => 'https://github.com/' . self::REPO,
 			'download_link' => $release['package'],
 			'requires'      => $release['requires'],
