@@ -1,5 +1,5 @@
 === Minimalio SEO ===
-Contributors: minimalio
+Contributors: mikulas-k
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 7.4

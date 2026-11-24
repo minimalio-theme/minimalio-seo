@@ -6,8 +6,8 @@
  * Version:           1.1.0
  * Requires at least: 5.8
  * Requires PHP:      7.4
- * Author:            Minimalio
- * Author URI:        https://minimalio.org
+ * Author:            mikulas-k
+ * Author URI:        https://mikulaskarpeta.net/en
  * License:           GPL-3.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       minimalio-seo
